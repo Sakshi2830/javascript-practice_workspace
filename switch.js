@@ -4,9 +4,9 @@
 //testprep - gets access to create/delete prepared tests
 //user - gets access to consume content
   
-var user = "prep";
+var person = "prep";
 
-switch (user) {
+switch (person) {
     case "admin":
         console.log("gets full access");
         break;
