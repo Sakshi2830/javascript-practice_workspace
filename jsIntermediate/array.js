@@ -55,3 +55,15 @@ const result = myNum.filter((num) => num > 54);
 
 console.log(result);
 // o/p => [ 67, 89, 87 ]
+
+//..........splice() and slice()........
+
+var user = ['jon', 'don', 'ron', 'harry', 'emma', 'lisa',];
+//it slice off the values from start and end as given and give remaining value
+console.log(user.slice(1,4)); // o/p => [ 'don', 'ron', 'harry' ]
+//by only giving start value it just slice off from remaining value
+console.log(user.slice(1));//o/p => [ 'don', 'ron', 'harry', 'emma', 'lisa' ]
+
+user.splice(1,2,"updated");// o]p=> [ 'jon', 'updated', 'harry', 'emma', 'lisa' ]
+console.log(user);
+
