@@ -29,3 +29,33 @@ console.table(iphone12);
     │    Charging     │ 'Compatible with MagSafe' │
     │  Front_Camera   │  '12MP TrueDepth camera'  │
     └─────────────────┴───────────────────────────┘*/
+
+
+
+
+//--------------MORE IN OBJECT-------------
+var user = {
+    firstName: "Sammy",
+    lastName: "Warren",
+    role: "Admin",
+    facebookSignedIn: 32,
+    courseList: [],
+    buyCourse: function(courseName){
+        this.courseList.push(courseName);
+    },
+    getCourseCount: function(){
+        return `${this.firstName} has enrolled in ${this.courseList.length} courses`;
+    }
+
+}
+
+console.log(user.firstName);
+console.log(user.getCourseCount());
+user.buyCourse("React js course");
+user.buyCourse("Angular course")
+console.log(user.getCourseCount());
+
+//o/p =>
+// Sammy
+// Sammy has enrolled in 0 courses
+// Sammy has enrolled in 2 courses
