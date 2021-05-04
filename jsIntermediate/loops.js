@@ -7,7 +7,7 @@ var myStates = [
     "Tamil Nadu",
     "Maharastra"
 ]
-
+//--------------FOR LOOP---------------
 for (let i = 0; i < myStates.length; i++) {
 
     if (typeof myStates[i] !=="string") {
@@ -15,3 +15,20 @@ for (let i = 0; i < myStates.length; i++) {
     }
     console.log(myStates[i]);
 }
+
+
+// ---------------WHILE LOOP-------------
+let i=0;
+while (i < myStates.length) {
+    console.log(myStates[i]);
+    i++;
+    
+}
+
+//-------------DO WHILE--------------
+let i=0;
+ do{
+    console.log(myStates[i]);
+    i++;
+    
+}while (i < myStates.length)
